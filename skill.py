@@ -18,7 +18,7 @@ class TranslateSkill:
         try:
             result = self._translator.translate(text, dest=target.strip())
             tools.clipboard.set(result.text)
-            tools.popup.show(f"Translated to {result.dest} — copied to clipboard.")
+            tools.popup.show(result.text)
         except Exception as exc:
             tools.popup.show(f"Translation failed: {exc}")
 
