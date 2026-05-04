@@ -13,13 +13,7 @@ class TranslateSkill:
             tools.popup.show("Nothing to translate — select or copy text first.")
             return
 
-        target = tools.input.ask(
-            f"Translate to (e.g. fr, de, ja) [{self._default_lang}]:"
-        )
-        if target is None:          # user dismissed the dialog
-            return
-        if not target.strip():
-            target = self._default_lang
+        target = "sr"
 
         try:
             result = self._translator.translate(text, dest=target.strip())
