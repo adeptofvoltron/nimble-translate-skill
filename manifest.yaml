@@ -1,0 +1,15 @@
+name: translate
+version: "1.0.0"
+api_version: 1
+description: >
+  Translates selected or clipboard text to any language using Google Translate.
+  Prompts for a target language code at runtime.
+entrypoint: skill.py
+class_name: TranslateSkill
+permissions:
+  - clipboard
+  - popup
+  - input
+dependencies:
+  - googletrans==4.0.0rc1
+author: "Bernard van der Esch"
