@@ -9,7 +9,11 @@ class_name: TranslateSkill
 permissions:
   - clipboard
   - popup
-  - input
 dependencies:
   - googletrans==4.0.0rc1
+config_fields:
+  - key: target_lang
+    description: "Target Language code"
+    default: "en"
+    possible_values: [en, es, fr, pl, se, sr,it]
 author: "Bernard van der Esch"

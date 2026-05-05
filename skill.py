@@ -13,11 +13,11 @@ class TranslateSkill:
             tools.popup.show("Nothing to translate — select or copy text first.")
             return
 
-        target = "sr"
+        target = self._default_lang
 
         try:
             result = self._translator.translate(text, dest=target.strip())
-            tools.clipboard.set(result.text)
+
             tools.popup.show(result.text)
         except Exception as exc:
             tools.popup.show(f"Translation failed: {exc}")
