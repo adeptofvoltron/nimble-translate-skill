@@ -1,4 +1,4 @@
-![Nimble](logo_mini.png)
+![Nimble](logo_resized.png)
 # Translator Skill
 
 A skill for the [Nimble](https://github.com/adeptofvoltron/nimble) app that translates selected or clipboard text to any language using Google Translate.
